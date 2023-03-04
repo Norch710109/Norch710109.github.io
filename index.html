@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PChome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="top-bar">
+    <span>PChome<br>&nbsp;&nbsp;&nbsp;24hr購物</span>
+</div>
+<div class="social-mdeiaIcon">
+    <h1>PChome現在正在努力恢復中....</h1>
+    <h2>歡迎以下列方式聯絡我們</h2>
+    <a herf = "#" class="fa fa-facebook" onclick="redirectToOtherSite()"></a>
+    <div style="text-align: center;">
+        <p>您可以透過<a href="https://24h.pchome.com.tw/">點擊此處</a>返回Pchome首頁</p>
+    </div>
+</div>
+<div>
+    <div style="text-align: center;">
+        <p>若無操作，網頁將在</p>
+        <div id="timer">20</div>
+        <p>秒後自動重整頁面</p>
+    </div>
+    <script>
+        var timeLeft = 20;
+        var timer = setInterval(function() {
+            timeLeft--;
+            document.getElementById("timer").innerHTML = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                location.reload();
+            }
+        }, 1000);
+    </script>
+</div>
+<script src = "main.js"></script>
+</body>
+</html>

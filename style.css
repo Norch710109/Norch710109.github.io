@@ -1,0 +1,63 @@
+
+html, body {
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    position: center;
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    position: fixed;
+    bottom: 85px;
+    right : 60px;
+}
+p , #timer {
+    font-size: 3rem;
+    display: inline-block;
+    text-align: center;
+    position: center;
+}
+span {
+    font-size: 2rem;
+    color: white;
+    left: 100px;
+    position: absolute;
+}
+.fa {
+    padding: 20px;
+    width: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 20px 3px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right : 60px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.fa:hover {
+    background: #3B5999;
+    color: white;
+}
+
+.fa-facebook {
+    background: white;
+    color: black;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    height: 80px;
+    background-color:red;
+}
