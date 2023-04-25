@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>PChome 24h購物</title>
+    <link rel="icon" type="image/x-icon" href="https://cs.ecimg.tw/img/icon/24-64x64.ico" sizes="64x64">
+    <link type="text/css" href="./PChome 24h購物_files/web-vip-logincssv3-20230414183541.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="WRAPPER" class="ecsite-layout style_shopping ecsite-login">
+    <!-- HEADER start -->
+    <div id="HEADER">
+        <div class="block_H s_desktop">
+            <div class="Ht">
+                <h1 class="logotype"><a href="https://24h.pchome.com.tw/">PChome 24h購物</a></h1>
+                <a href="https://24h.pchome.com.tw/">回PChome 24h購物首頁</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="CONTENT" class="layout-wrapper">
+        <div class="layout-center">
+            <!-- block_C start -->
+            <div class="block_C">
+                <!-- login enter account-->
+                <div id="memLogin" class="c-auth">
+                    <div class="c-auth__header">
+                        <div class="c-auth__headLine">歡迎登入</div>
+                        <div class="c-auth__signIn">
+                            <div class="c-auth__info">沒有 PChome 24h購物帳號？</div>
+                            <a id="goSignUp" href="javascript:void(0)" class="c-auth__link"><strong>立即註冊</strong></a>
+                        </div>
+                    </div>
+                    <div class="c-auth__content">
+                        <div class="c-auth__input">
+                            <div class="c-input c-input--mdAuto">
+                                <div class="c-input__text c-input__text--outLine">
+                                    <input id="loginAcc" type="text" placeholder="請輸入手機號碼 或 Email">
+                                </div>
+                                <div id="loginAccErr" class="c-input__warningText"></div>
+                            </div>
+                        </div>
+                        <div class="c-auth__remember">
+                            <label class="c-inputLabel">
+                                <div class="c-auth__check">
+                                    <div class="c-checkbox">
+                                        <input id="btnRememberAcc" type="checkbox" class="c-checkbox__input" checked=""
+                                               value="">
+                                        <div class="c-checkbox__checkbox"></div>
+                                    </div>
+                                </div>
+                                <div class="c-inputLabel__text">記住帳號</div>
+                            </label>
+                            <div class="c-auth__forget"><a id="resetPasswordLink" href="https://www.commonhealth.com.tw/article/83960"
+                                                           class="c-auth__link">忘記密碼</a></div>
+                        </div>
+
+                        <div class="c-auth__btn">
+                            <button id="btnKeep" class="btn btn--mdAuto" type="button" onclick="reDirection()">
+                                <span class="btn__square btn__square--primary"><span
+                                        class="btn__text">繼續</span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="c-auth__footer">
+                        <div class="c-auth__other">
+                            <div class="c-auth__desc">
+                                登入帳號，即表示您已閱讀並同意 PChome 之<a href="javascript:void(0)"
+                                                                          class="c-auth__link termsLink">會員條款 與
+                                客戶隱私權條款</a>
+                            </div>
+                        </div>
+                        <div class="c-auth__social">
+                            <div class="c-auth__socialLine">
+                                <div class="c-auth__tite">使用以下帳號快速登入</div>
+                            </div>
+
+                            <div class="c-auth__BtnBox">
+                                <ul class="c-auth__login">
+                                    <li class="c-auth__loginBtn">
+                                        <a href="javascript:void(0)" class="btn btn--lg" platformid="facebook"><span
+                                                class="btn__outLine btn__outLine--grayLighterDarker"><i
+                                                class="o-icons o-icons--facebook"></i></span></a>
+                                        <span class="c-auth__loginText">Facebook</span>
+                                    </li>
+                                    <li class="c-auth__loginBtn">
+                                        <a href="javascript:void(0)" class="btn btn--lg" platformid="google"><span
+                                                class="btn__outLine btn__outLine--grayLighterDarker"><i
+                                                class="o-icons o-icons--google"></i></span></a>
+                                        <span class="c-auth__loginText">Google</span>
+                                    </li>
+                                    <li class="c-auth__loginBtn">
+                                        <a href="javascript:void(0)" class="btn btn--lg" platformid="apple"><span
+                                                class="btn__outLine btn__outLine--grayLighterDarker"><i
+                                                class="o-icons o-icons--apple"></i></span></a>
+                                        <span class="c-auth__loginText">Apple</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-auth__other">
+                                <div class="c-auth__btn c-auth__btn--expand">
+                                    <a href="javascript:void(0)" class="btn btn--sm" type="button">
+                                            <span class="btn__noFrame btn__noFrame--blue">
+                                                <span class="btn__text">
+                                                    <strong>使用其他 PChome 帳號登入</strong>
+                                                </span>
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

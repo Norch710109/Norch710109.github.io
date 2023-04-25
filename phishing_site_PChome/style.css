@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "PChomeIconSet";
+    src: url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.eot?tt8tcb");
+    src: url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.eot?tt8tcb");
+    src: url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.eot?tt8tcb#iefix") format("embedded-opentype"),
+    url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.ttf?tt8tcb") format("truetype"),
+    url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.woff?tt8tcb") format("woff"),
+    url("https://fs-a.ecimg.tw/css/2016/style/css/v201607/new24hframe/font/PChomeIconSet/PChomeIconSet.svg?tt8tcb#PChomeIconSet") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block
+}
+
+/*Set the background color*/
+.ecsite-login .layout-wrapper {
+    background-color: #F2F2F2;
+}
+/*the block for the HEADER and background range*/
+.ecsite-login .block_H {
+    max-width: 1240px;
+    width: auto;
+    height: 60px;
+}
+
+.ecsite-login .layout-center {
+    margin: auto;
+    padding: 48px 0;
+    min-height: calc(100vh - 212px);
+}
+.ecsite-login .Ht {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+
+
+/*the block for the HEADER*/
+.block_H {
+    margin: 0 auto;
+    padding: 0 5px;
+}
+a:hover {
+    color: #17abeb;
+    text-decoration: none
+}
+a {
+    color: #0090EB;
+    text-decoration: none;
+}
+
+
+/*set the content block of login form*/
+.c-auth {
+    margin: auto;
+    padding: 24px;
+    max-width: 400px;
+    color: #2B2B2B;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+.c-auth__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.c-auth__headLine {
+    font-size: 22px;
+    font-weight: 700;
+}
+.c-auth__signIn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    padding: 0 12px;
+}
+.c-auth__infoItem {
+    margin-top: 8px;
+}
+.c-auth__signIn .c-auth__link {
+    font-weight: 500;
+    margin-left: 4px;
+}
+.c-auth__signIn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    padding: 0 12px;
+}
+
+.c-auth__content {
+    margin: 24px 0;
+}
+.c-input--mdAuto {
+    flex: 0 0 100%;
+}
+.c-input--mdAuto .c-input__text {
+    flex: 0 0 100%;
+    min-height: 40px;
+    padding: 7px 12px;
+}
+.c-input input[type='email'], .c-input input[type='number'], .c-input input[type='search'], .c-input input[type='text'], .c-input input[type='tel'], .c-input input[type='url'], .c-input input[type='password'] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+}
+.c-input input[type='password'], .c-input input[type='text'], .c-input input[type='number'] {
+    width: 100%;
+    min-height: 24px;
+    background-color: transparent;
+    outline: none;
+}
+.c-auth__input + .c-auth__input {
+    margin-top: 16px;
+}
+
+/*custom input chunk*/
+.c-input__text--outLine {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+
+.c-auth__remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 16px;
+}
+label.c-inputLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.c-auth__check {
+    display: flex;
+    align-items: center;
+    padding: 4px
+}
+.c-checkboxLabel {
+    display: inline-flex;
+    cursor: default
+}
+.c-checkbox {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+/*using the new checkBox to cover the old one*/
+.c-checkbox .c-checkbox__input {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer
+}
+/*replace the old checkBox with the new one*/
+.c-checkbox__input + .c-checkbox__checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 2px;
+    color: transparent;
+    cursor: pointer;
+    background: #fff;
+    transition: background, border 0.15s
+}
+/*customize the white check sigh for the checkbox*/
+.c-checkbox__input + .c-checkbox__checkbox::after {
+    content: '\e94e';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/*rebuild the customize checkBox */
+.c-checkbox:not(.is-disabled) .c-checkbox__input:checked + .c-checkbox__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border: none;
+    background: #0090EB;
+    font-size: 16px;
+    font-family: "PChomeIconSet"
+}
+
+.c-auth__btn {
+    margin-top: 24px;
+}
+.btn--mdAuto {
+    width: 100%;
+}
+.btn {
+    font-weight: 500;
+    font-family: "Noto Sans TC","Montserrat","Roboto",Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn--mdAuto .btn__square {
+    width: 100%;
+    font-size: 16px;
+}
+.btn__square {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.btn--mdAuto .btn__text {
+    min-width: 100px;
+}
+.btn .btn__text {
+    display: inline-flex;
+    justify-content: center;
+}
+.btn__square--primary {
+    color: #fff;
+    background-color: #ea1717
+}
+
+
+/*連結排版*/
+.c-auth__desc .c-auth__link {
+    display: inline-block;
+    margin: 0 4px;
+    font-weight: 500;
+}
+
+/*typesetting of social block */
+.c-auth__social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+/*separate line*/
+.c-auth__socialLine {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1px;
+    margin: 18px 0;
+    padding: 0;
+    background: #e5e5e5;
+}
+
+/*將文字插進去分隔線*/
+.c-auth__tite {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 8px;
+    color: #646464;
+    font-weight: 500;
+    min-width: 156px;
+    transform: translate(-50%,-50%);
+    background: #fff;
+}
+/*畫格子*/
+.c-auth__login {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+/*social icon 分隔*/
+.c-auth__login .c-auth__loginBtn {
+    margin-top: 24px;
+    width: calc(100% / 3);
+}
+.c-auth__loginText {
+    margin-top: 4px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.btn__outLine--grayLighterDarker:not(.is-disabled) {
+    color: #414141;
+    border: 1px solid #e5e5e5;
+}
+.btn--lg .btn__outLine--grayLighterDarker {
+    padding: 10px 11px;
+}
+.btn--lg .btn__outLine {
+    width: auto;
+    padding: 9px 10px;
+}
+.btn__outLine--grayLighterDarker {
+    padding: 8px 12px;
+}
+.btn__outLine {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    padding: 7px 6px;
+    font-size: 16px;
+}
+.o-icons {
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+.o-icons--google {
+    width: 22px;
+    height: 22px;
+    background-image: url("https://fs-e.ecimg.tw/img/h24/new/index/v1/images/img/img_auth_google.png")
+}
+.o-icons--facebook {
+    width: 22px;
+    height: 22px;
+    background-image: url("https://fs-e.ecimg.tw/img/h24/new/index/v1/images/img/img_auth_facebook.png")
+}
+.o-icons--apple {
+    width: 22px;
+    height: 22px;
+    background-image: url("https://fs-e.ecimg.tw/img/h24/new/index/v1/images/img/img_auth_apple.png")
+}
+.btn--lg
+i {
+    font-size: 32px
+}
+.c-auth__loginBtn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+
+
+
+
+.c-auth__other {
+    color: #646464;
+}
+.btn__noFrame--blue {
+    font-weight: bold;
+    color: #0090eb;
+}
+.btn__noFrame--blue:hover {
+    color: #7fc7e9;
+}
+
+.btn--sm .btn__noFrame .btn__text {
+    min-width: auto;
+}
+.btn .btn__text {
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+
+
+.Ht {
+    margin-top: 10px;
+    color: #555;
+    font: 15px Arial;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: normal;
+    font-family: Arial;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.ecsite-login .logotype {
+    width: 200px;
+    height: 28px;
+    margin: 16px 0;
+}
+
+.logotype {
+    display: block;
+    margin: 6px 12px 4px 2px;
+    width: 165px;
+    height: 30px;
+    background: url('https://fs-f.ecimg.tw/img/h24/new/index/v1/images/logo/logo_pchome.svg') no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    float: left
+}
+.logotype
+a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+
+
+
+.Ht>a:before {
+    content: '';
+    display: inline-block;
+    padding-right: 3px;
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent #7fc7e9;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
